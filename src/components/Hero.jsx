@@ -1,10 +1,14 @@
 import React from "react";
+import "../CSS/Hero.css";
+import heroBg from "../assets/homepage1.jpg";  
 
 function Hero() {
   return (
-    <section id="hero">
-      <h2>Hero</h2>
-      <p>Content for Hero goes here.</p>
+    <section
+      className="hero"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      <h1 className="hero-title">FARHAN</h1>
     </section>
   );
 }
