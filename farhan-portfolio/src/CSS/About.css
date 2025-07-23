@@ -17,6 +17,10 @@
   line-height: 1.4;
   margin-bottom: 30px;
 }
+.front{
+color: rgb(31, 28, 28);
+ font-weight: 1000;
+ }
 
 .highlight {
    background-color: #efcf7d; /* Golden yellow */

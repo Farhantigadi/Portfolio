@@ -1,4 +1,12 @@
 .projects-wrapper {
   padding: 60px 20px;
-  background-color: #f4f4f4;
+ }
+.latest{
+color: Black;
+position: relative;
+left: 30px;
+font-size: 6rem;
+border-bottom: 2px solid black;
+font-weight: 100;
 }
+

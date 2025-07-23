@@ -1,17 +1,17 @@
+
+
 .custom-project-card {
-  width: 100%;
-  background-color: rgb(112, 33, 33);
-  height: 400px;
+  width: 50%;
+  height: 370px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  left: 49%;
 }
 
 .project-title-area {
@@ -20,38 +20,51 @@
   border-radius: 10px;
   color: white;
   max-width: 90%;
-
-
+  position: relative;
 }
 
 .project-title {
-  font-size: rem;
+  font-size: 5rem;
   font-weight: bold;
- color : black;
-  font-weight: 300;
+  color: black;
+  font-weight: 100;
+  position: relative;
+}
 
+.project-title:hover {
+  cursor: pointer;
 }
 
 .project-info {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .project-description {
-  font-size: 1rem;
-  color: black;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: rgb(75, 72, 72);
+  margin-top: 30px;
+  left: 40px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  width: 600px;
 }
 
 .view-project-btn {
   display: inline-block;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
+  color: rgb(96, 93, 93);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+  height: 20px;
+}
+.view-project-btn:hover {
+  color: rgb(76, 76, 246);
 }
 
-.view-project-btn:hover {
-  background-color: #e0a800;
+
+.custom-project-card-container:hover .project-description,
+.custom-project-card-container:hover .view-project-btn {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -60,16 +73,22 @@
     height: auto;
     padding: 15px;
   }
-
   .project-title-area {
     width: 100%;
   }
-
   .project-title {
     font-size: 1.5rem;
   }
-
   .project-description {
     font-size: 0.9rem;
   }
 }
+
+.project-details {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 400px;
+  left: 80px;
+}
+

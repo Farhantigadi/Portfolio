@@ -1,6 +1,7 @@
 import About from "./About";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import Projects from "./Projects";
 
 function Portfolio() {
     return (  
@@ -8,7 +9,7 @@ function Portfolio() {
       <Navbar/>
       <Hero/>
       <About/>
-      
+      <Projects/>
         </div>
     );
 }

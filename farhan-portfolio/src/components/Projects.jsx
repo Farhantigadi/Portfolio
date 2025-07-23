@@ -5,6 +5,8 @@ import "../CSS/Projects.css";
 
 function Projects() {
   return (
+    <div>
+      <span className="latest"> Projects</span>
     <section id="projects" className="projects-wrapper">
       {projectData.map((project) => (
         <ProjectCard
@@ -16,6 +18,7 @@ function Projects() {
         />
       ))}
     </section>
+    </div>
   );
 }
 

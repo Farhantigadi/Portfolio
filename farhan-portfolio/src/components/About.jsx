@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/About.css";
+import "../CSS/All.css"
 
 function About() {
   return (
@@ -9,7 +10,7 @@ function About() {
           <span className="highlight">Java Backend </span> <br />Developer & Learner at <span className="highlight">KodNest</span>
         </h1>
         <p className="about-description">
-  Hello! I'm <strong>Mohammadfarhan Tigadi</strong>, a recent engineering graduate from the 2025 batch, passionate about building scalable backend systems using Java, Spring Boot, and REST APIs. I enjoy solving coding challenges, upskilling continuously, and collaborating in fast-paced Agile environments. Always eager to learn, I thrive on writing clean, efficient code and delivering impactful software solutions. Currently, I'm also diving into <span className="front">frontend development</span> to broaden my skill set.
+  Hello! I'm <strong>Mohammadfarhan Liyaqatali Tigadi</strong>, a recent engineering graduate from the 2025 batch, passionate about building  backend systems using Java, Spring Boot, and REST APIs. I enjoy solving coding challenges, upskilling continuously, and collaborating in fast-paced Agile environments. Always eager to learn, I thrive on writing clean, efficient code and delivering impactful software solutions. Currently, I'm also diving into <span className="front">frontend development</span> to broaden my skill set.
 </p>
 
       </div>
