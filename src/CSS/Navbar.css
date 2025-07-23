@@ -1,3 +1,4 @@
+/* ...existing code... */
 .navbar {
   position: fixed;
   top: 0;
@@ -9,7 +10,6 @@
   padding: 10;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   background-color: transparent;
-
 }
 
 .navbar.scrolled {
@@ -20,13 +20,13 @@
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #111;
+  color: #c3c3c3;
   position: relative;
   left: 70px; 
 }
 .logo:hover{
     cursor: pointer;
-      color: #FBBF24;
+    color: #FBBF24;
 }
 
 .nav-links {
@@ -38,7 +38,7 @@
 }
 
 .nav-links a {
-  color: #111;
+  color: #cfcfcf;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -47,3 +47,67 @@
 .nav-links a:hover {
   color: #FBBF24;
 }
+
+.navbar.scrolled .logo {
+  color: #000;
+}
+
+.navbar.scrolled .nav-links a {
+  color: #000;
+}
+
+/* Hamburger (Mobile Toggle) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #FBBF24;
+}
+
+/* === Mobile Styles === */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    z-index: 1001;
+  }
+   .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px
+  }
+
+  
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    gap: 20px;
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    right: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .logo {
+    left: 0;
+    position: static;
+  }
+}
+

@@ -20,5 +20,10 @@
   letter-spacing: 12px;
   font-weight: 300;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("../assets/2842680.jpg");
+  }
+}
 
 
