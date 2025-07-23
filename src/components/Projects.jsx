@@ -1,10 +1,20 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
+import projectData from "./ProjectData";
+import "../CSS/Projects.css";
 
 function Projects() {
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Content for Projects goes here.</p>
+    <section id="projects" className="projects-wrapper">
+      {projectData.map((project) => (
+        <ProjectCard
+          key={project.id}
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          github={project.github}
+        />
+      ))}
     </section>
   );
 }
