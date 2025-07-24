@@ -10,3 +10,15 @@ border-bottom: 2px solid black;
 font-weight: 100;
 }
 
+/* === Mobile Only === */
+@media (max-width: 768px) {
+  .latest {
+    font-size: 4rem !important;
+    left: 15px !important;
+    border-bottom-width: 1px !important;
+  }
+  
+  .projects-wrapper {
+    padding: 40px 15px !important;
+  }
+}

@@ -27,3 +27,17 @@
 }
 
 
+/* === Mobile Only === */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 8rem !important;
+    -webkit-text-stroke: 1px white !important;
+    letter-spacing: 6px !important;
+    position: relative;
+    top: 90px;
+  }
+  
+  .hero {
+    background-position: 60% center !important;
+  }
+}

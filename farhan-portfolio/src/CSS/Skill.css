@@ -1,0 +1,15 @@
+/* Preserve existing styles */
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.skill-icon {
+  font-size: 1.1rem;
+}
+
+.skill-name {
+  font-size: 1rem;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/Navbar.css";
+import resumePDF from "../assets/resume-B-1.0.pdf";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,16 +18,17 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <div className="logo">Farhan</div>
+      <a href="#home" className="logo">Farhan</a>
+
       <div className="hamburger" onClick={toggleMenu}>
         ☰
       </div>
+
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
         <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
         <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
-        <li><a href="#resume" onClick={() => setMenuOpen(false)}>Resume</a></li>
-        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+        <li><a href={resumePDF}  target="_blank" rel="noopener noreferrer"  onClick={() => setMenuOpen(false)}>Resume</a></li>
       </ul>
     </nav>
   );

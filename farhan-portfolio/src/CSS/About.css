@@ -34,3 +34,36 @@ color: rgb(31, 28, 28);
   line-height: 1.8;
   padding: 0 10px;
 }
+
+
+
+
+
+.about-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about-social img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.2s;
+}
+
+.about-social img:hover {
+  transform: scale(1.1);
+}
+#email {
+
+  background-color: transparent;
+  position: relative;
+  bottom: 1px;
+}
+
+
+
+

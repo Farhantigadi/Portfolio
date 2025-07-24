@@ -5,6 +5,7 @@ import heroBg from "../assets/homepage1.jpg";
 function Hero() {
   return (
     <section
+    id="home"
       className="hero"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
@@ -14,3 +15,4 @@ function Hero() {
 }
 
 export default Hero;
+

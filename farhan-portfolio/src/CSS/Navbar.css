@@ -24,6 +24,7 @@
   color: #c3c3c3;
   position: relative;
   left: 70px; 
+  text-decoration: none;
 }
 .logo:hover{
     cursor: pointer;
@@ -113,3 +114,30 @@
   }
 }
 
+/* === Mobile Only === */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px !important;
+  }
+  
+  .logo {
+    left: 0 !important;
+    font-size: 20px !important;
+  }
+  
+  .nav-links {
+    top: 50px !important;
+    right: -15px !important;
+    width: 100vw !important;
+    gap: 15px !important;
+    padding: 15px 0 !important;
+  }
+  
+  .nav-links a {
+    font-size: 18px !important;
+  }
+  
+  .hamburger {
+    right: 15px !important;
+  }
+}
