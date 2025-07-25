@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer " id="footer">
       <div className="footer-content">
         <div className="footer-name">
           <h2>Mohammadfarhan Tigadi</h2>

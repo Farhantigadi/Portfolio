@@ -1,131 +1,105 @@
-
-
-.custom-project-card {
-  width: 50%;
-  height: 370px;
-  background-size: cover;
-  background-position: center;
+.custom-project-card-container {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  left: 49%;
-  margin-bottom: 4px;
-}
-
-.project-title-area {
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  max-width: 90%;
-  position: relative;
-}
-
-.project-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: black;
-  font-weight: 100;
-  position: relative;
-  font-family: poppins;
-}
-
-.project-title:hover {
-  cursor: pointer;
-}
-
-.project-info {
-  margin-top: 20px;
-  position: relative;
-}
-.project-description {
-  font-size: 1.2rem;
-  color: rgb(52, 51, 51);
-  margin-top: 30px;
-  left: 40px;
-  opacity: 0;
-  transition: opacity 1s ease;
-  width: 600px;
-}
-
-.view-project-btn {
-  display: inline-block;
-  color:#969494;
-  text-decoration: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  margin-top: 14px;
-  font-size: 24px;
-  font-family: poppins;
-  width: 142px;
-  height: 16.8;
-}
-.view-project-btn:hover {
-  color: rgb(76, 76, 246);
-}
-
-
-.custom-project-card-container:hover .project-description,
-.custom-project-card-container:hover .view-project-btn {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .custom-project-card {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-  }
-  .project-title-area {
-    width: 100%;
-  }
-  .project-title {
-    font-size: 1.5rem;
-  }
-  .project-description {
-    font-size: 0.9rem;
-  }
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  gap: 32px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .project-details {
-  padding: 20px;
-  width: 100%;
-  position: static;
-  bottom: 0;
-  left: 80px;
-  margin-top: -380px;
+  flex: 1 1 0;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: 'Poppins', sans-serif;
 }
 
-/* === Mobile Only === */
-@media (max-width: 768px) {
+/* Title */
+.project-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Description */
+.project-description {
+  font-size: 1.15rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.view-project-btn {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #7a7a7a;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  backdrop-filter: none;
+}
+
+.view-project-btn:hover {
+  background-color: rgba(76, 76, 246, 0.8);
+  box-shadow: 0 8px 16px rgba(76, 76, 246, 0.3);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+}
+
+/* Image box */
+.custom-project-card {
+  flex: 1 1 0;
+  max-width: 400px;
+  min-width: 240px;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .custom-project-card-container {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
   .custom-project-card {
-    width: 100% !important;
-    height: 250px !important;
-    left: 0 !important;
-    margin-bottom: 20px !important;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
-  
+
   .project-details {
-    left: 0 !important;
-    margin-top: 20px !important;
-    padding: 0 15px !important;
+    padding: 24px 16px;
   }
-  
+
   .project-title {
-    font-size: 2.5rem !important;
+    font-size: 2rem;
   }
-  
+
   .project-description {
-    width: 100% !important;
-    left: 0 !important;
-    font-size: 1rem !important;
-    margin-top: 15px !important;
+    font-size: 1rem;
   }
-  
+
   .view-project-btn {
-    font-size: 16px !important;
+    font-size: 0.95rem;
   }
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/Navbar.css";
+import Footer from "./Footer";
 import resumePDF from "../assets/resume-B-1.0.pdf";
 
 function Navbar() {
@@ -29,6 +30,8 @@ function Navbar() {
         <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
         <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
         <li><a href={resumePDF}  target="_blank" rel="noopener noreferrer"  onClick={() => setMenuOpen(false)}>Resume</a></li>
+        <li><a href="#footer" onClick={() => setMenuOpen(false)}>Contact</a></li>
+
       </ul>
     </nav>
   );

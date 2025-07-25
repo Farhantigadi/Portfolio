@@ -7,10 +7,11 @@ const Skills = () => {
     {
       category: "Frontend",
       items: [
-        { name: "React (Hooks, Router)" },
-        { name: "Vite" },
-        { name: "JavaScript (ES6+)" },
-        { name: "HTML5/CSS3" }
+        { name: "React (Learning) " },
+        { name: "JavaScript" },
+        { name: "HTML/CSS" },
+        { name: "& Some libraries" },
+
       ]
     },
     {
@@ -27,17 +28,16 @@ const Skills = () => {
       items: [
         { name: "Git & GitHub" },
         { name: "Postman" },
-        { name: "VS Code" },
-        { name: "NPM" }
+        { name: "Sonar Cloud" },
+        { name: "Github Action" }
       ]
     },
     {
-      category: "Database & Hosting",
+      category: "Database & Others",
       items: [
         { name: "MySQL" },
-        { name: "Netlify" },
-        { name: "Vercel" },
-        { name: "Firebase" }
+        { name: " Agile-Scrum understanding" },
+        { name: " IntelliJ & VS Code" },
       ]
     }
   ];

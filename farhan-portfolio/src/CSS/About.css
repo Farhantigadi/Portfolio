@@ -58,10 +58,10 @@ color: rgb(31, 28, 28);
   transform: scale(1.1);
 }
 #email {
-
   background-color: transparent;
   position: relative;
   bottom: 1px;
+    transform: scale(1.15);
 }
 
 
