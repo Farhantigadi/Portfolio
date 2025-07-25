@@ -72,7 +72,6 @@
   border-radius: 12px;
   overflow: hidden;
 }
-
 /* Responsive layout */
 @media (max-width: 900px) {
   .custom-project-card-container {
@@ -83,8 +82,14 @@
   }
 
   .custom-project-card {
-    max-width: 100%;
-    aspect-ratio: 16/10;
+    max-width: 50%;
+    min-height: 190px; /* ✅ Fallback height to make image visible */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+    left: 130px;
   }
 
   .project-details {
