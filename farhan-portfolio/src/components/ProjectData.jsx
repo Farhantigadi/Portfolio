@@ -1,6 +1,6 @@
-import bankingImg from "../assets/digital-mobile-banking-vector-p.jpg";
+import bankingImg from "../assets/digital-mobile-banking-vector-p.JPG";
 import journalImg from "../assets/journalP.avif";
-import jobimage from "../assets/jobP.jpg"
+import jobimage from "../assets/jobP.JPG"
 
 const ProjectData = [
   {
