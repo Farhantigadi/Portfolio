@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/Navbar.css";
 import Footer from "./Footer";
-import resumePDF from "../assets/resume-B-1.0.pdf";
+import resumePDF from "../assets/Farhan_resume-2.1.pdf";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
