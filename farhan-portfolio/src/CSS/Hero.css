@@ -30,7 +30,7 @@
 /* === Mobile Only === */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 8rem !important;
+    font-size: 5.2rem !important;
     -webkit-text-stroke: 1px white !important;
     letter-spacing: 6px !important;
     position: relative;
