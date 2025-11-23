@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd farhan-portfolio && npm run build",
+  "outputDirectory": "farhan-portfolio/dist",
+  "installCommand": "cd farhan-portfolio && npm install"
+}
