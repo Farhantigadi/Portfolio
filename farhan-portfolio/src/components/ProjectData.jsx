@@ -1,6 +1,6 @@
 import bankingImg from "../assets/digital-mobile-banking-vector-p.jpg";
 import journalImg from "../assets/journalP.avif";
-import jobimage from "../assets/jobP.jpg"
+import jobimage from "../assets/jobP.jpg";
 
 const ProjectData = [
   {
@@ -37,6 +37,19 @@ REST APIs are tested with Postman, documented via Swagger, and integrated with S
     description: `KodJobs is a full-stack job search platform built using React, Node.js (Express), and TypeScript. Developed with the help of AI tools like Replit AI, the app fetches real-time job data using a LinkedIn Scraper API from RapidAPI and displays it on the frontend. It uses Drizzle ORM with Neon Database for serverless persistence and features a clean, modular architecture with separate client, server, and shared folders. KodJobs reflects my ability to rapidly build and integrate real-world APIs using modern tools and a vibe-driven development approach.`,
     image: jobimage,
     github: "https://z7zmyl-5000.csb.app/",
+   },
+   {
+    id: "nal-real-estate",
+    title: "NAL Real Estate Platform",
+    description: `A production real estate platform built with React, TypeScript, and Vite during my internship.
+
+Key features: Property listings, document verification, comparison tools, multi-role dashboards, AI-powered search, and bidding system.
+
+Implemented responsive UI with Tailwind CSS, integrated APIs, and deployed on cPanel.
+
+Live platform serving customers across India.`,
+    image: "https://img.freepik.com/premium-vector/searching-concept-real-estate_23-2148639938.jpg",
+    github: "https://nglindia.com/"
    }
 ];
 
